@@ -15,7 +15,7 @@ public class patrol_navigator : MonoBehaviour
     void Start()
     {
         agent= GetComponent<NavMeshAgent>();
-        UpdateDestination();
+        Position();
     }
 
     // Update is called once per frame
@@ -23,19 +23,19 @@ public class patrol_navigator : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, target) < 1)
         {
-            IterateWaypointIndex();
-            UpdateDestination();
+            Waypoints();
+            Position();
         }
     }
 
-    void UpdateDestination()
+    void Position()
     {
         target = waypoints[waypointIndex].position;
         agent.SetDestination(target); 
 
     }
     
-    void IterateWaypointIndex()
+    void Waypoints()
     {
         waypointIndex++;
         if(waypointIndex == waypoints.Length)

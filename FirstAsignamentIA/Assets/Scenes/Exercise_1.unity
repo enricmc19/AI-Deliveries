@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657767, g: 0.4964139, b: 0.5748186, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657737, g: 0.49641353, b: 0.574818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4205,7 +4205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808812021}
   m_LocalRotation: {x: -0.0030716427, y: 0.973234, z: -0.22970386, w: -0.0065041245}
-  m_LocalPosition: {x: 2.9, y: 31.83, z: 71.47}
+  m_LocalPosition: {x: 24.2, y: 15.2, z: 48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7960,7 +7960,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 20
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -7984,6 +7984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2045ede3e90a8d4287c636bf8998d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 1
+  agent: {fileID: 1387271208}
 --- !u!1001 &1393221775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10004,15 +10006,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495403447699483741, guid: cc3c57fe9cc9c9e44bc43f7893d1708e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8705875
+      value: 22.56
       objectReference: {fileID: 0}
     - target: {fileID: 495403447699483741, guid: cc3c57fe9cc9c9e44bc43f7893d1708e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.07
+      value: 5.37
       objectReference: {fileID: 0}
     - target: {fileID: 495403447699483741, guid: cc3c57fe9cc9c9e44bc43f7893d1708e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.22
+      value: 33.5
       objectReference: {fileID: 0}
     - target: {fileID: 495403447699483741, guid: cc3c57fe9cc9c9e44bc43f7893d1708e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11201,7 +11203,7 @@ PrefabInstance:
     - target: {fileID: 1216435090000238643, guid: 34e776118e152b444ba6649c44b8b1c8, type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 1216435090000238643, guid: 34e776118e152b444ba6649c44b8b1c8, type: 3}
       propertyPath: m_Name
       value: habitant0

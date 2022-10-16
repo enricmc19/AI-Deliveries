@@ -5,8 +5,9 @@ using UnityEngine.AI;
 
 public class Wander : MonoBehaviour
 {
-    float radius=50, offset;
-    int area = 50;
+ 
+    public int offset;
+    public NavMeshAgent agent=null;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +17,28 @@ public class Wander : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        wander();
+
+        agent.SetDestination(wander(transform.position, 100.0f, offset));
     }
-    void wander()
+
+   
+    Vector3 wander(Vector3 origin, float Radius, int offset)
     {
         // parameters: float radius, offset;
-        Vector3 localTarget = UnityEngine.Random.insideUnitCircle * radius;
+        Vector3 localTarget = UnityEngine.Random.insideUnitCircle * Radius;
         localTarget += new Vector3(0, 0, offset);
         Vector3 worldTarget = transform.TransformPoint(localTarget);
         worldTarget.y = 0f;
-        NavMesh.SamplePosition(localTarget, out NavMeshHit hit, radius, area);
+
+        NavMeshHit NavHit;
+
+
+        NavMesh.SamplePosition(localTarget, out NavHit, Radius, offset);
+
+        return NavHit.position;
+
+
+
+
     }
 }

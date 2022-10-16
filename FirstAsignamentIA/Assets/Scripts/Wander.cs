@@ -5,13 +5,14 @@ using UnityEngine.AI;
 
 public class Wander : MonoBehaviour
 {
- 
+
+    public float radius;
     public int offset;
     public NavMeshAgent agent=null;
     // Start is called before the first frame update
     void Start()
     {
-        
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class Wander : MonoBehaviour
         localTarget += new Vector3(0, 0, offset);
         Vector3 worldTarget = transform.TransformPoint(localTarget);
         worldTarget.y = 0f;
+        agent.destination = worldTarget;
 
         NavMeshHit NavHit;
 
@@ -41,4 +43,13 @@ public class Wander : MonoBehaviour
 
 
     }
+
+   /* void Wander()
+    {
+        Vector3 localTarget = UnityEngine.Random.insideUnitCircle * radius;
+        localTarget += new Vector3(0, 0, offset);
+        Vector3 worldTarget = transform.TransformPoint(localTarget);
+        worldTarget.y = 0f;
+        agent.destination = worldTarget;
+    }*/
 }

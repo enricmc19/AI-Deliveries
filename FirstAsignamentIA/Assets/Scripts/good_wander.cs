@@ -6,8 +6,8 @@ using UnityEngine.AI;
 
 public class good_wander : MonoBehaviour
 {
-    public float wanderRadius;
-    public float wanderTimer;
+    public float wanderRadius; // Unit limiter for the area where the AI will find a new position
+    public float wanderTimer; // This wanderTimer is used in order to make our AI look for a new position avoiding getting stuck in some place without a possible exit
 
     private Transform target;
     private NavMeshAgent agent;
@@ -25,7 +25,7 @@ public class good_wander : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= wanderTimer)
+        if (timer >= wanderTimer) //When timer exceeds wanderTimer we look for a new position
         {
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
             agent.SetDestination(newPos);
@@ -35,13 +35,13 @@ public class good_wander : MonoBehaviour
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
-        Vector3 randDirection = UnityEngine.Random.insideUnitSphere * dist;
+        Vector3 futureDirection = UnityEngine.Random.insideUnitSphere * dist;
 
-        randDirection += origin;
+        futureDirection += origin;
 
         NavMeshHit navHit;
 
-        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+        NavMesh.SamplePosition(futureDirection, out navHit, dist, layermask);
 
         return navHit.position;
     }

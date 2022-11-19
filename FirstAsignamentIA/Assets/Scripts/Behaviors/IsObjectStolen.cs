@@ -11,6 +11,7 @@ public class IsObjectStolen : ConditionBase
     {
         GameObject treasure = GameObject.Find("Present-01");
         GameObject robber = GameObject.Find("Robber");
-        return Vector3.Distance(treasure.transform.position, robber.transform.position) < 2f;
+
+        return Vector3.Distance(treasure.transform.position, robber.transform.position) < 2f;        
     }
 }

@@ -14,7 +14,10 @@ namespace BBUnity.Actions
         ///<value>Input bool Parameter.</value>
         [InParam("active")]
         [Help("true if must be activate")]
+      
         public bool active;
+      
+    
 
         ///<value>Input Game object to set the active value Parameter.</value>
         [InParam("game object")]
@@ -28,6 +31,8 @@ namespace BBUnity.Actions
             if (targetGameobject == null)
                 targetGameobject = gameObject;
             targetGameobject.SetActive(active);
+          
+
         }
 
         /// <summary>Method of Update of SetActive.</summary>

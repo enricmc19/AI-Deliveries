@@ -400,6 +400,7 @@
 "Assets/Scripts/Behaviors/isBenchNear.cs"
 "Assets/Scripts/Behaviors/IsCopNear.cs"
 "Assets/Scripts/Behaviors/IsObjectStolen.cs"
+"Assets/Scripts/Behaviors/IsShoutActive.cs"
 "Assets/Scripts/benchOnSight.cs"
 "Assets/Scripts/CharacterMovement.cs"
 "Assets/Scripts/Flock.cs"

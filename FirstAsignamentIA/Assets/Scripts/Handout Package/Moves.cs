@@ -13,7 +13,7 @@ public class Moves : MonoBehaviour
     public Collider floor;
     GameObject[] hidingSpots;
     NavMeshAgent agent;
-
+    public bool shout=false;
     void Start()
     {
         agent = this.GetComponent<NavMeshAgent>();
@@ -114,6 +114,7 @@ public class Moves : MonoBehaviour
 
 
         Seek(info.point + chosenDir.normalized);
+        shout = true;
 
     }
 }

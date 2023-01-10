@@ -1928,7 +1928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 241785051}
   target: {fileID: 1184602820}
-  pos: {x: 2, y: 0, z: 3}
+  pos: {x: 6, y: 0, z: 8}
   rot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!195 &241785051
 NavMeshAgent:
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 281095906}
   target: {fileID: 1184602820}
-  pos: {x: 1, y: 0, z: 2}
+  pos: {x: 4, y: 0, z: 6}
   rot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!195 &281095906
 NavMeshAgent:
@@ -2698,7 +2698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 390233467}
   target: {fileID: 1184602820}
-  pos: {x: 2, y: 0, z: 2}
+  pos: {x: 6, y: 0, z: 6}
   rot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &392429325 stripped
 GameObject:
@@ -5159,8 +5159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 780640755}
   target: {fileID: 1184602820}
-  pos: {x: 2, y: 0, z: 1}
-  rot: {x: 0, y: 0, z: 0, w: 0}
+  pos: {x: 6, y: 0, z: 4}
+  rot: {x: 0, y: 0, z: 0, w: 1}
 --- !u!195 &780640755
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5607,7 +5607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808812021}
   m_LocalRotation: {x: -0.0030716427, y: 0.973234, z: -0.22970386, w: -0.0065041245}
-  m_LocalPosition: {x: 4.7, y: 36.9, z: 94}
+  m_LocalPosition: {x: 4.5, y: 28.4, z: 77.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9442,7 +9442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2604409605281228788, guid: eee0e99b6d63fc746bddfbace23276e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.68
+      value: -10.1
       objectReference: {fileID: 0}
     - target: {fileID: 2604409605281228788, guid: eee0e99b6d63fc746bddfbace23276e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9450,7 +9450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2604409605281228788, guid: eee0e99b6d63fc746bddfbace23276e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 55.45
+      value: 39.8
       objectReference: {fileID: 0}
     - target: {fileID: 2604409605281228788, guid: eee0e99b6d63fc746bddfbace23276e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10412,7 +10412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1498092961}
   target: {fileID: 1184602820}
-  pos: {x: 1, y: 0, z: 3}
+  pos: {x: 4, y: 0, z: 8}
   rot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1499006766 stripped
 Transform:
@@ -14535,5 +14535,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 2136120785}
   target: {fileID: 1184602820}
-  pos: {x: 1, y: 0, z: 1}
+  pos: {x: 4, y: 0, z: 4}
   rot: {x: 0, y: 0, z: 0, w: 0}
